@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Effects in jQuery</title>
+  </head>
+  <body>
+    <h1>Effects in jQuery</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, corrupti.</p>
+    <button class="btnHide">Hide Selector</button>
+    <button class="btnShow">Show Selector</button>
+    <button class="btnToggle">Toggle Selector</button>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Hide
+        $(".btnHide").click(function () {
+          $("p").hide();
+          console.log("P element is Hide");
+        });
+        // Show
+        $(".btnShow").click(function () {
+          $("p").show();
+          console.log("P element is show");
+        });
+        // Toggle
+        $(".btnToggle").click(function () {
+          $("p").toggle();
+          console.log("P element is Toggle");
+        });
+      });
+    </script>
+  </body>
+</html>

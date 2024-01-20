@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS In jQuery</title>
+
+
+  </head>
+  <body>
+    <h1>CSS In jQuery</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, quis!
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, quis!
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, quis!
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, quis!
+    </p>
+
+    <button>Change CSS With the Help Of jQuery</button>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      console.log($);
+      $(document).ready(function () {
+
+        $('button').click(function () {
+            // $('p').css('color', 'red')
+            // $('p').css({color: 'red'})
+            // $('p').css({color: 'white', backgroundColor: 'crimson', fontSize: '30px'})
+            $('p').css({'color': 'white', 'backgroundColor': 'crimson', 'fontSize': '30px'})
+            $('body').css({backgroundColor: 'tan'})
+            $('button').css({backgroundColor: 'teal', color: 'khaki', padding: '10px 30px', borderRadius: '20px', fontSize: '30px'})
+            console.log('Color Changed');
+        })
+
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode</title>
+  </head>
+  <body>
+      <h1 class="hey" id="heading">Dark Mode</h1>
+    <button id="btn" onclick="addPara()">Adding Paragraph Dynamically</button>
+    <!-- <div class="row"> -->
+      <button>Dark Mode</button>
+      <!-- <button class="">Light Mode</button> -->
+    <!-- </div> -->
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fuga
+      minus eos iste incidunt molestiae omnis esse! Soluta, fuga ab autem quo
+      dicta quisquam nam perferendis? Dignissimos illum eius consequatur!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fuga
+      minus eos iste incidunt molestiae omnis esse! Soluta, fuga ab autem quo
+      dicta quisquam nam perferendis? Dignissimos illum eius consequatur!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fuga
+      minus eos iste incidunt molestiae omnis esse! Soluta, fuga ab autem quo
+      dicta quisquam nam perferendis? Dignissimos illum eius consequatur!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fuga
+      minus eos iste incidunt molestiae omnis esse! Soluta, fuga ab autem quo
+      dicta quisquam nam perferendis? Dignissimos illum eius consequatur!
+    </p>
+
+    <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
+    <script>
+    //   console.log($);
+    //   $("*").css({ margin: "0px", padding: "0px", boxSizing: "border-box" });
+    //   $(".row").css({
+    //     display: "flex",
+    //     justifyContent: "space-between",
+    //     alignItem: "center",
+    //     padding: "20px",
+    //   });
+    //   $("button").css({
+    //     backgroundColor: "teal",
+    //     color: "khaki",
+    //     padding: "0px 50px",
+    //     borderRadius: "20px",
+    //     fontSize: "30px",
+    //   });
+      //   $("body").css({
+      //       backgroundColor: "crimson",
+      //       color: "white",
+      //       fontSize: "30px",
+      //     });
+
+      //   $("p").css({ margin: "10px" });
+
+      //     $(document).ready(function () {
+      //       $("button").click(function () {
+      //         $("body").css({
+      //           backgroundColor: "black",
+      //           color: "white",
+      //           fontSize: "30px",
+      //         });
+      //       });
+      //       $("button").dblclick(function () {
+      //         $("body").css({
+      //           backgroundColor: "crimson",
+      //           color: "white",
+      //           fontSize: "30px",
+      //         });
+      //       });
+      //     });
+
+      function addPara() {
+        let node = document.createElement("p");
+        let textNode = document.createTextNode(
+          "This is the Magic Of JavaScript."
+        );
+        node.appendChild(textNode);
+        document.getElementById("heading").appendChild(node);
+      }
+    </script>
+  </body>
+</html>

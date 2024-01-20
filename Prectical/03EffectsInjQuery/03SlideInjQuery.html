@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide In JQuery</title>
+  </head>
+  <body>
+    <h1>Slide In JQuery</h1>
+
+    <button class="btnSlideUp">Slide Up</button>
+    <button class="btnSlideDown">Slide Down</button>
+    <button class="btnSlideToggle">Slide Toggle</button>
+
+    <hr />
+    <div class="box">You Wanna See Some Magic</div>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <script>
+      $("body").css({ backgroundColor: "tan", textAlign: "center" });
+      $("button").css({
+        backgroundColor: "brown",
+        color: "khaki",
+        padding: "10px 30px",
+      });
+      $(".box").css({
+        backgroundColor: "crimson",
+        color: "khaki",
+        width: "300px",
+        height: "200px",
+        margin: "auto",
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $('.btnSlideUp').click(function () {
+           $('.box').slideUp() 
+        });
+        $('.btnSlideDown').click(function () {
+           $('.box').slideDown() 
+        });
+        $('.btnSlideToggle').click(function () {
+           $('.box').slideToggle() 
+        });
+        
+      });
+    </script>
+  </body>
+</html>

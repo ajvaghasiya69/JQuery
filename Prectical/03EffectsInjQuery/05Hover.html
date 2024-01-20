@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover IN JS</title>
+  </head>
+  <body>
+    <h1>Hover IN JS</h1>
+    <hr />
+    <button>Animate</button>
+    <hr />
+    <div class="box">This is The Magic OF jQuery</div>
+
+    <!-- jQuery  -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+
+    <!-- CSS Script  -->
+
+    <script>
+      $("body").css({ backgroundColor: "tan" });
+      $("button").css({
+        backgroundColor: "brown",
+        color: "khaki",
+        padding: "10px 30px",
+      });
+      $(".box").css({
+        backgroundColor: "crimson",
+        color: "khaki",
+        width: "400px",
+        height: "200px",
+        margin: "20px",
+        border: "5px solid lime",
+        textAlign: "center",
+        fontSize: "30px",
+      });
+    </script>
+
+    <!-- Script  -->
+
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $(".box").animate(
+            {
+              marginLeft: "500px",
+              // backgroundColor: 'green',
+              borderRadius: "50px",
+            },
+            2000
+          );
+
+          $('.box').hover(function () {
+            $('.box').css({
+                backgroundColor: 'brown',
+                color: 'black',
+                marginLeft: '0px'
+            })
+        })
+        });
+
+
+
+       
+
+        // $(".box").hover({
+        //     backgroundColor: "yellow",
+        //     color: "black",
+        // });
+
+
+
+      });
+    </script>
+  </body>
+</html>
