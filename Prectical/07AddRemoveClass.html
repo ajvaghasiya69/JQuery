@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Remove Class In JQuery</title>
+    <style>
+      .heading {
+        background-color: teal;
+        color: khaki;
+      }
+      .box {
+        width: 300px;
+        border: 5px solid lime;
+      }
+      hr{
+        background-color: rgb(89, 0, 255);
+        height: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add Class Remove Class In JQuery</h1>
+    <hr />
+
+    <button id="btnAdd">Add Class</button>
+    <button id="btnRemove">Remove Class</button>
+    <button id="btnToggle">Toggle Class</button>
+
+    <!-- JQuery script -->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <!-- script css  -->
+
+    <script>
+      $("body").css({
+        backgroundColor: "tan",
+        textAlign: "center",
+      });
+      $("button").css({
+        backgroundColor: "brown",
+        color: "khaki",
+        padding: "10px 30px",
+        margin: "10px",
+      });
+    </script>
+
+    <!-- script -->
+
+    <script>
+      $(document).ready(function () {
+        // Add Class
+
+        $("#btnAdd").click(function () {
+          $("h1").addClass("heading box");
+        });
+
+        // Remove Class
+
+        $("#btnRemove").click(function () {
+          $("h1").removeClass("heading");
+        });
+
+        // Toggle Class
+
+        $("#btnToggle").click(function () {
+          $("h1").toggleClass("heading");
+        });
+      });
+    </script>
+  </body>
+</html>

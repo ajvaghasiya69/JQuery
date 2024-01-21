@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class{
+            height: 200px;
+            width: 200px;
+            font-size: 20px;
+            color: crimson;
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add REmove Class</h1>
+
+    <button class="add">Add Class</button>
+    <button class="remove">Remove Class</button>
+    <button class="toggle">Toggle Class</button>
+    <div class="box">Touch me</div>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+$('.add').click(function(){
+    $('.box').addClass('class');
+
+});
+$('.remove').click(function(){
+    $('.box').removeClass('class');
+
+});
+$('.toggle').click(function(){
+    $('.box').toggleClass('class');
+
+});
+        });
+    </script>
+</body>
+</html>
