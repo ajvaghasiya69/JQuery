@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mouse Enter</h1>
+    <div class="box">this is box</div>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script>
+        $('.box').css({'height':'200px','width':'200px','border':'5px solid blue' , 'backgroundColor': 'skyblue'})
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.box').mouseenter(function(){
+                $('.box').css({'marginLeft': '500px', 'fontSize': '20px'})
+
+            });
+            $('.box').mouseleave(function(){
+                $('.box').css({'marginTop': '500px', 'fontSize': '50px'})
+
+            });
+
+        });
+    </script>
+</body>
+</html>

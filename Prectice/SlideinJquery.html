@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+   <h1>Slide in JQuery</h1> 
+   <button class="in">Slide up</button>
+
+   <button class="out">Slide down</button>
+   <button class="toggle">Slide Toggle</button>
+   <div class="box" >
+    Hey Akshay
+   </div>
+   <script src="../jquery-3.7.1.min.js"></script>
+   <script>
+    $(document).ready( function(){
+        $('.in').click(function(){
+        $('.box').slideUp();
+        });
+        $('.out').click(function(){
+        $('.box').slideDown();
+        });
+        $('.toggle').click(function(){
+        $('.box').slideToggle();
+        });
+       
+
+    });
+   </script>
+</body>
+</html>

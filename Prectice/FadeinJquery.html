@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Fade i n JQuery</h1> 
+   <button class="in">Fade in</button>
+   <button class="out">Fade out</button>
+   <button class="toggle">Fade Toggle</button>
+   <button class="to">Fade to</button>
+   <div class="box">
+    Hey Akshay
+   </div>
+   <script src="../jquery-3.7.1.min.js"></script>
+   <script>
+    $(document).ready( function(){
+        $('.in').click(function(){
+        $('.box').fadeIn();
+        });
+        $('.out').click(function(){
+        $('.box').fadeOut();
+        });
+        $('.toggle').click(function(){
+        $('.box').fadeToggle();
+        });
+        $('.to').click(function(){
+        $('.box').fadeTo();
+        });
+
+    });
+   </script>
+</body>
+</html>
